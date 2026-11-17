@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>좋은 제품, 맞는 인플루언서를 만나면 팔립니다 | COLLAB.ON</title>
+<meta name="description" content="육아·리빙 공동구매 전문 벤더 콜라보온. 인플루언서 매칭부터 운영·소통·재공구까지 한 번에 맡습니다." />
+<meta property="og:title" content="좋은 제품, 맞는 인플루언서를 만나면 팔립니다 | COLLAB.ON" />
+<meta property="og:description" content="정산서로 증명하는 육아·리빙 공동구매 파트너" />
+<meta property="og:type" content="website" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<style>
+:root{
+  --bg:#FFFBF8;--card:#FFF3EC;--card2:#FFE9DF;--line:#F1E6DE;--line2:#E8D9CE;
+  --ink:#1E1A18;--sub:#6B625C;--muted:#A69C95;
+  --coral:#F26B3A;--coral-deep:#E8502D;--coral-soft:#FFB8A3;
+  --dark:#1C330D;--dark2:#2A4718;
+  --f:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);line-height:1.62;letter-spacing:-.02em;
+  -webkit-font-smoothing:antialiased;padding-bottom:86px;overflow-x:hidden}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.042em;line-height:1.28}
+p{margin:0}ul{margin:0;padding:0;list-style:none}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;border:0;cursor:pointer}
+.wrap{max-width:560px;margin-inline:auto;padding-inline:22px}
+
+.rv{opacity:0;transform:translateY(20px);transition:.8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+.teaser{margin-top:28px;padding-top:18px;border-top:1px dashed var(--line2);text-align:center;font-size:13.5px;font-weight:700;color:var(--coral)}
+.teaser .chev{display:block;font-size:14px;color:var(--muted);margin-bottom:6px;font-weight:400;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+
+.topbanner{background:linear-gradient(96deg,#FF8A6A,var(--coral));color:#fff;text-align:center;font-size:12.5px;font-weight:700;padding:10px 14px}
+
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top-in{max-width:560px;margin-inline:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:9px}
+.wm{font-size:13px;letter-spacing:.3em;font-weight:800;color:var(--ink)}
+.wm span{color:var(--coral)}
+.top-cta{font-size:12.5px;font-weight:700;color:#fff;border-radius:999px;padding:8px 14px;background:var(--ink);white-space:nowrap}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:38px 0 46px;color:#fff;
+  background:radial-gradient(80% 55% at 85% 0%,rgba(242,107,58,.42),transparent 62%),linear-gradient(180deg,var(--dark2),var(--dark))}
+.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border:26px solid rgba(242,107,58,.16);border-radius:50%}
+.hero .wrap{position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 14px;font-size:12px;color:#F3E2DA;background:rgba(255,255,255,.06)}
+.badge i{width:5px;height:5px;border-radius:50%;background:var(--coral-soft);box-shadow:0 0 10px rgba(255,184,163,.9);animation:pl 2.2s infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{margin-top:22px;font-size:clamp(21px,5.4vw,25px);font-weight:600;color:#DCCBC2;line-height:1.5}
+.hero h1 b{color:#fff;font-weight:700}
+.hero .big{margin-top:14px;font-size:clamp(30px,8.2vw,40px);font-weight:800;letter-spacing:-.045em;line-height:1.22}
+.hero .big em{font-style:normal;color:var(--coral)}
+.hero .sub2{margin-top:14px;font-size:15.5px;color:#F6ECE7;font-weight:600}
+.hero .sub2 i{font-style:normal;color:var(--coral-soft)}
+.hero-stats{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.hero-stats div{border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 8px;text-align:center;background:rgba(255,255,255,.05)}
+.hero-stats b{display:block;font-size:19px;font-weight:900;color:#fff;letter-spacing:-.04em}
+.hero-stats small{font-size:11px;color:#BCA99F}
+
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:17px 22px;border-radius:12px;font-size:16px;font-weight:700;transition:.3s var(--ease)}
+.btn:active{transform:scale(.985)}
+.btn-coral{background:linear-gradient(96deg,#FF8A6A,var(--coral));color:#fff;box-shadow:0 14px 34px -14px rgba(242,107,58,.6)}
+.btn-white{background:#fff;color:var(--ink)}
+.hero .btn{margin-top:22px}
+.sub-tip{margin-top:11px;text-align:center;font-size:12.4px;color:var(--muted)}
+.hero .sub-tip{color:#BCA99F}
+
+section{padding:50px 0}
+.lbl{font-size:11px;letter-spacing:.2em;color:var(--coral);font-weight:700}
+h2{margin-top:12px;font-size:clamp(22px,5.8vw,28px)}
+h2 .lite{color:var(--muted);font-weight:600}
+.lead{margin-top:14px;color:var(--sub);font-size:14.6px;line-height:1.85}
+
+/* problem */
+.recall{position:relative;overflow:hidden}
+.recall::before{content:"";position:absolute;top:-58px;right:-58px;width:170px;height:170px;border:20px solid var(--card2);border-radius:50%;pointer-events:none}
+.recall-grid{margin-top:24px;display:flex;flex-direction:column;gap:12px}
+.recall-card{display:flex;align-items:center;gap:16px;background:var(--card);border-radius:16px;padding:20px;border:1px solid var(--line)}
+.recall-card .ico{flex:none;width:42px;height:42px;border-radius:12px;background:#fff;display:grid;place-items:center;color:var(--coral)}
+.recall-card .t{font-size:15.5px;font-weight:700}
+.recall-card .d{margin-top:3px;font-size:12.8px;color:var(--sub);line-height:1.6}
+
+/* solution */
+.direction{background:#fff}
+.stmt{margin-top:22px;font-size:clamp(19px,5vw,23px);font-weight:800;line-height:1.5}
+.stmt em{font-style:normal;color:var(--coral)}
+.formula{margin-top:18px;display:inline-block;font-size:13.5px;font-weight:700;color:#fff;background:var(--ink);border-radius:999px;padding:10px 18px}
+
+/* check */
+.diag{background:linear-gradient(180deg,#fff,var(--card) 120%)}
+.diag-box{margin-top:22px;border:1.5px solid var(--line2);border-radius:18px;padding:22px 20px;background:#fff}
+.diag-box .cap{font-size:15.5px;font-weight:800}
+.diag-box .cap em{font-style:normal;color:var(--coral)}
+.diag ul{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.diag li{display:flex;gap:11px;align-items:flex-start;font-size:14.2px;line-height:1.6;color:var(--sub);padding:13px 14px;border:1px solid var(--line);border-radius:11px;background:var(--bg)}
+.diag li .chk{flex:none;width:19px;height:19px;border-radius:6px;border:1.6px solid var(--coral);margin-top:1px}
+.diag .foot{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line2);font-size:13.8px;font-weight:700;text-align:center}
+.diag .foot em{font-style:normal;color:var(--coral)}
+
+/* numbers */
+.nums{background:#fff}
+.num-grid{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.num{border:1px solid var(--line);border-radius:16px;padding:18px 16px;background:var(--card)}
+.num b{display:block;font-size:28px;font-weight:900;color:var(--coral);letter-spacing:-.05em;line-height:1.1}
+.num b small{font-size:15px;margin-left:2px}
+.num span{display:block;margin-top:8px;font-size:13.4px;font-weight:700}
+.num em{display:block;margin-top:2px;font-style:normal;font-size:11.6px;color:var(--sub)}
+.disc{margin-top:14px;color:var(--muted);font-size:12px;line-height:1.8}
+
+/* top5 */
+.cases{background:var(--card2);position:relative;overflow:hidden}
+.rank{margin-top:24px;display:flex;flex-direction:column;gap:10px}
+.rk{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.rk.first{background:var(--dark);color:#fff;border-color:var(--dark)}
+.rk .hd{display:flex;align-items:center;gap:12px}
+.rk .no{flex:none;width:36px;height:36px;border-radius:10px;background:var(--card);color:var(--coral);display:grid;place-items:center;font-weight:900;font-size:15px}
+.rk.first .no{background:var(--coral);color:#fff}
+.rk .who{flex:1;min-width:0}
+.rk .who b{display:block;font-size:16px}
+.rk .who small{font-size:12.4px;color:var(--sub)}
+.rk.first .who small{color:#D2C1B8}
+.rk .amt{text-align:right;font-size:17px;font-weight:900;letter-spacing:-.04em;white-space:nowrap}
+.rk .amt small{display:block;font-size:11.4px;font-weight:600;color:var(--sub)}
+.rk.first .amt small{color:#D2C1B8}
+.bar{margin-top:12px;height:8px;border-radius:99px;background:var(--card);overflow:hidden}
+.rk.first .bar{background:rgba(255,255,255,.1)}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--coral-soft),var(--coral))}
+.rk .tag{display:inline-block;margin-top:10px;font-size:11.4px;font-weight:700;color:var(--coral);background:var(--card);border-radius:99px;padding:4px 10px}
+.rk.first .tag{background:rgba(242,107,58,.18);color:var(--coral-soft)}
+
+/* repeat */
+.repeat{background:#fff}
+.rp-list{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.rp{border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center}
+.rp .w{font-size:14.4px;font-weight:800}
+.rp .w small{display:block;font-size:12px;font-weight:600;color:var(--sub)}
+.rp .chip{grid-row:span 2;font-size:13px;font-weight:800;color:#fff;background:var(--coral);border-radius:99px;padding:6px 12px}
+.rp .v{font-size:12.6px;color:var(--sub)}
+.rp .v b{color:var(--ink)}
+
+/* compare */
+.compare{background:var(--bg)}
+.cmp-list{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.cmp-item{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff}
+.cmp-item .k{padding:11px 15px;font-size:12.5px;font-weight:700;color:var(--sub);background:var(--bg);border-bottom:1px solid var(--line)}
+.cmp-item .rows{display:grid;grid-template-columns:1fr 1fr}
+.cmp-item .o,.cmp-item .n{padding:13px 15px;font-size:13px;line-height:1.55}
+.cmp-item .o{color:var(--muted);border-right:1px solid var(--line)}
+.cmp-item .o::before{content:"일반 공구 중개";display:block;font-size:10.5px;color:var(--muted);margin-bottom:5px}
+.cmp-item .n{font-weight:600;background:var(--card)}
+.cmp-item .n::before{content:"COLLAB.ON";display:block;font-size:10.5px;color:var(--coral);margin-bottom:5px;font-weight:800}
+
+/* role */
+.promise{background:#fff}
+.promise-box{margin-top:22px;border-radius:20px;padding:28px 18px;text-align:center;background:linear-gradient(165deg,var(--dark2),var(--dark));color:#fff}
+.promise-box .row{display:flex;align-items:center;justify-content:center;gap:8px}
+.promise-box .side{flex:1;font-size:12.5px;color:#BCA99F}
+.promise-box .side b{display:block;color:#fff;font-size:15px;font-weight:800;margin-top:4px}
+.promise-box .side.us b{color:var(--coral)}
+.promise-box .arrow{color:#7A675C}
+.promise-box .foot{margin-top:18px;padding-top:16px;border-top:1px dashed rgba(255,255,255,.16);font-size:13.6px;color:#E2D3CB;line-height:1.8}
+.promise-box .foot b{color:var(--coral-soft)}
+
+/* service */
+.svc{background:var(--bg)}
+.svc-grid{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.svc-grid div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 14px}
+.svc-grid b{display:block;font-size:14px}
+.svc-grid span{display:block;margin-top:5px;font-size:12.2px;color:var(--sub);line-height:1.6}
+.svc-grid i{font-style:normal;font-size:11px;font-weight:800;color:var(--coral);letter-spacing:.06em}
+
+/* flow */
+.flow{background:#fff}
+.steps{margin-top:24px;display:flex;flex-direction:column;gap:14px}
+.s{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start}
+.dot{width:30px;height:30px;border-radius:50%;background:var(--ink);display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff}
+.flow h3{font-size:15.5px;font-weight:700}
+.flow p{margin-top:5px;color:var(--sub);font-size:13.4px}
+.note{margin-top:24px;border:1px solid var(--line);border-radius:13px;padding:16px 18px;background:var(--card);color:var(--sub);font-size:13px;line-height:1.8}
+.note b{color:var(--coral)}
+
+/* faq */
+.faq{background:var(--bg)}
+.faq .i{border-bottom:1px solid var(--line)}
+.faq .i:first-of-type{border-top:1px solid var(--line)}
+.faq button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;color:var(--ink);text-align:left;padding:17px 0;font-size:14.8px;font-weight:700}
+.faq .pm{flex:none;width:18px;height:18px;position:relative}
+.faq .pm::before,.faq .pm::after{content:"";position:absolute;left:50%;top:50%;translate:-50% -50%;background:var(--coral);transition:.4s var(--ease)}
+.faq .pm::before{width:11px;height:1.5px}
+.faq .pm::after{width:1.5px;height:11px}
+.faq .i.on .pm::after{height:0}
+.faq .a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq .a p{padding:0 0 18px;color:var(--sub);font-size:13.8px;line-height:1.85}
+
+/* contact */
+.apply{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--dark),var(--dark2) 60%,var(--dark));color:#fff}
+.apply::before{content:"";position:absolute;left:50%;top:0;width:640px;height:640px;translate:-50% -34%;background:radial-gradient(circle,rgba(242,107,58,.3),transparent 62%);pointer-events:none}
+.apply .wrap{position:relative}
+.apply h2 .lite{color:#A8958A}
+.apply .lead{color:#D2C1B8}
+.ct-card{margin-top:22px;border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px 20px;background:rgba(255,255,255,.05)}
+.ct-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.12);font-size:14px}
+.ct-row:last-of-type{border-bottom:0}
+.ct-row span{color:#A8958A}
+.ct-row b{color:#fff}
+.ct-card .btn{margin-top:14px}
+.trust{margin-top:18px;display:flex;flex-wrap:wrap;gap:7px;justify-content:center}
+.trust span{font-size:11.5px;color:#A8958A;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 11px}
+
+footer{border-top:1px solid var(--line);padding:30px 0 34px;color:var(--muted);font-size:12.4px;line-height:1.8;background:#fff}
+footer b{color:var(--sub);letter-spacing:.16em}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 22px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line)}
+.sticky .in{max-width:560px;margin-inline:auto}
+.sticky .btn{padding:15px 10px;font-size:15.5px;border-radius:11px}
+
+@media(min-width:860px){
+  .wrap,.top-in,.sticky .in{max-width:720px}
+  body{font-size:16.5px}
+  section{padding:76px 0}
+  .hero{padding:58px 0 66px}
+  .hero h1{font-size:30px}
+  .hero .big{font-size:52px}
+  .hero .sub2{font-size:20px}
+  .hero-stats b{font-size:26px}
+  .hero-stats small{font-size:13px}
+  h2{font-size:36px}
+  .lead{font-size:17px}
+  .recall-card .t{font-size:19px}
+  .recall-card .d{font-size:14.5px}
+  .stmt{font-size:28px}
+  .diag li{font-size:16.5px}
+  .num b{font-size:38px}
+  .num span{font-size:16px}
+  .rk{padding:22px 24px}
+  .rk .who b{font-size:19px}
+  .rk .amt{font-size:22px}
+  .cmp-item .o,.cmp-item .n{font-size:15px}
+  .svc-grid b{font-size:16.5px}
+  .svc-grid span{font-size:14px}
+  .faq button{font-size:17px}
+  .faq .a p{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbanner">🤝 육아·리빙 브랜드 공동구매 입점 제안, 지금 받고 있습니다</div>
+
+<header class="top">
+  <div class="top-in">
+    <a href="#top" class="wm">COLLAB<span>.ON</span></a>
+    <a class="top-cta" href="#apply">입점 문의</a>
+  </div>
+</header>
+
+<!-- 1. 히어로 -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="badge"><i></i>육아 · 리빙 공동구매 전문 벤더</span>
+    <h1>제품은 좋은데,<br>공구만 열면 조용하다면?<br><b>문제는 제품이 아닐 수 있습니다</b></h1>
+    <div class="big">맞는 인플루언서를<br><em>아직 못 만난 겁니다</em></div>
+    <div class="sub2">콜라보온은 그 만남을 <i>[ 매칭 설계 ]</i>로 만듭니다</div>
+    <div class="hero-stats">
+      <div><b>2.6억+</b><small>누적 공구 판매액</small></div>
+      <div><b>100+</b><small>매칭 인플루언서</small></div>
+      <div><b>6,971만</b><small>단일 공구 최고</small></div>
+    </div>
+    <a class="btn btn-coral" href="#apply">우리 제품 공동구매 문의하기
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <p class="sub-tip">제품 검토 후, 맞는 인플루언서와 공구 조건을 제안드립니다</p>
+  </div>
+</section>
+
+<!-- 2. 문제 -->
+<section class="recall">
+  <div class="wrap">
+    <span class="lbl rv">PROBLEM</span>
+    <h2 class="rv">많이 겪어보신<br><span class="lite">이야기일 수도 있습니다</span></h2>
+    <div class="recall-grid">
+      <div class="recall-card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.8-3.2 3-5 5.5-5s4.7 1.8 5.5 5M16 6.5h5M18.5 4v5" stroke-linecap="round"/></svg></div>
+        <div><div class="t">팔로워 많은 인플루언서였는데 판매는 저조</div><div class="d">팔로워층이 제품 타겟과 맞지 않았던 경우</div></div>
+      </div>
+      <div class="recall-card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg></div>
+        <div><div class="t">섭외·제안서·일정 조율까지 전부 직접</div><div class="d">공구 한 번에 담당자 한 명이 묶여버리는 경우</div></div>
+      </div>
+      <div class="recall-card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h11l-2.5-2.5M20 17H9l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="t">한 번 팔고 끝나는 공동구매</div><div class="d">반응이 좋았는데도 다음 공구로 이어지지 않은 경우</div></div>
+      </div>
+    </div>
+    <div class="teaser rv"><span class="chev">⌄</span>세 가지 모두, 결국 ‘누구와 어떻게’에서 갈립니다</div>
+  </div>
+</section>
+
+<!-- 3. 해결 방향 -->
+<section class="direction">
+  <div class="wrap">
+    <span class="lbl rv">SOLUTION</span>
+    <h2 class="rv">노출을 늘리는 것과<br><span class="lite">판매가 오르는 것은 다릅니다</span></h2>
+    <p class="stmt rv">팔로워 수가 아니라,<br>그 팔로워가 <em>우리 제품을 살 사람인지</em><br>먼저 봐야 합니다</p>
+    <div class="formula rv">제품 분석부터 매칭 · 운영 · 재공구까지 — 콜라보온의 순서</div>
+    <div class="teaser rv"><span class="chev">⌄</span>혹시 우리 브랜드도 해당되는지 확인해보세요</div>
+  </div>
+</section>
+
+<!-- 4. 체크리스트 -->
+<section class="diag">
+  <div class="wrap">
+    <span class="lbl rv">CHECK</span>
+    <h2 class="rv">체크리스트로<br><span class="lite">먼저 확인해보세요</span></h2>
+    <div class="diag-box rv">
+      <div class="cap">아래 항목 중 몇 개나 해당되시나요?<br><em>하나만 해당돼도</em> 충분합니다</div>
+      <ul>
+        <li><span class="chk"></span>공동구매를 해보고 싶은데 어떤 인플루언서에게 연락해야 할지 모르겠다</li>
+        <li><span class="chk"></span>공구가를 얼마로, 어떤 구성으로 잡아야 할지 감이 안 온다</li>
+        <li><span class="chk"></span>인플루언서 섭외·연락·일정 조율에 내부 리소스가 너무 많이 든다</li>
+        <li><span class="chk"></span>반응 좋았던 공구를 2차로 이어가고 싶은데 방법을 모르겠다</li>
+      </ul>
+      <div class="foot">체크하신 항목, <em>콜라보온</em>이 하나씩 맡아드립니다.</div>
+    </div>
+    <div class="teaser rv"><span class="chev">⌄</span>실제로 얼마나 팔렸는지 궁금하시다면</div>
+  </div>
+</section>
+
+<!-- 5. 숫자 -->
+<section class="nums">
+  <div class="wrap">
+    <span class="lbl rv">NUMBERS</span>
+    <h2 class="rv">말보다,<br><span class="lite">정산서로 보여드립니다</span></h2>
+    <div class="num-grid">
+      <div class="num rv"><b>2.6<small>억+</small></b><span>누적 공동구매 판매액</span><em>최종 정산서 총 매출액 합계</em></div>
+      <div class="num rv"><b>100<small>+</small></b><span>매칭 인플루언서</span><em>육아·리빙 인플루언서 네트워크</em></div>
+      <div class="num rv"><b>6,971<small>만</small></b><span>단일 공구 최고 매출</span><em>인플루언서 A · 육아제품</em></div>
+      <div class="num rv"><b>70<small>%+</small></b><span>2차 재공구 진행률</span><em>검증된 조합의 재진행</em></div>
+    </div>
+    <p class="disc rv">※ 판매액·최고 매출은 콜라보온이 진행한 공동구매의 최종 정산서(총 매출액, VAT 포함) 기준입니다.</p>
+  </div>
+</section>
+
+<!-- 6. TOP5 -->
+<section class="cases">
+  <div class="wrap">
+    <span class="lbl rv">BEST CASE</span>
+    <h2 class="rv">판매금액으로 본<br><span class="lite">성공사례 TOP 5</span></h2>
+    <div class="rank">
+      <div class="rk first rv">
+        <div class="hd"><div class="no">1</div><div class="who"><b>인플루언서 A</b><small>육아제품</small></div><div class="amt">69,714,000원<small>약 320개 판매</small></div></div>
+        <div class="bar"><i style="width:100%"></i></div>
+        <span class="tag">3종 구성</span>
+      </div>
+      <div class="rk rv">
+        <div class="hd"><div class="no">2</div><div class="who"><b>인플루언서 B</b><small>육아제품</small></div><div class="amt">49,750,000원<small>250개 판매</small></div></div>
+        <div class="bar"><i style="width:71.4%"></i></div>
+      </div>
+      <div class="rk rv">
+        <div class="hd"><div class="no">3</div><div class="who"><b>인플루언서 C</b><small>육아제품</small></div><div class="amt">25,786,000원<small>119개 판매</small></div></div>
+        <div class="bar"><i style="width:37%"></i></div>
+        <span class="tag">2차 재공구 19,903,000원 추가</span>
+      </div>
+      <div class="rk rv">
+        <div class="hd"><div class="no">4</div><div class="who"><b>인플루언서 D</b><small>주방제품</small></div><div class="amt">11,868,000원<small>92개 판매</small></div></div>
+        <div class="bar"><i style="width:17%"></i></div>
+        <span class="tag">2차 재공구 6,192,000원 추가</span>
+      </div>
+      <div class="rk rv">
+        <div class="hd"><div class="no">5</div><div class="who"><b>인플루언서 E</b><small>생활제품 (2차)</small></div><div class="amt">11,299,600원<small>304개 판매</small></div></div>
+        <div class="bar"><i style="width:16.2%"></i></div>
+        <span class="tag">1차 10,020,210원 → 2차 +13%</span>
+      </div>
+    </div>
+    <p class="disc rv">※ 최종 정산서 총 매출액(VAT 포함), 인플루언서별 최고 회차 기준입니다. 인플루언서 A는 롯데홈쇼핑 연계 매출을 포함하며 수량은 매출 기준 추정치입니다. 제품·시기·채널에 따라 결과는 달라지며, 동일한 성과를 보장하지 않습니다.</p>
+    <div class="teaser rv"><span class="chev">⌄</span>한 번으로 끝나지 않는 이유</div>
+  </div>
+</section>
+
+<!-- 7. 재공구 -->
+<section class="repeat">
+  <div class="wrap">
+    <span class="lbl rv">REPEAT</span>
+    <h2 class="rv">검증된 조합은<br><span class="lite">2차 공구로 이어집니다</span></h2>
+    <div class="rp-list">
+      <div class="rp rv"><div class="w">인플루언서 E<small>생활제품</small></div><span class="chip">+13%</span><div class="v">1차 10,020,210원 → 2차 <b>11,299,600원</b></div></div>
+      <div class="rp rv"><div class="w">인플루언서 F<small>생활제품</small></div><span class="chip">+29%</span><div class="v">1차 2,369,700원 → 2차 <b>3,058,100원</b></div></div>
+      <div class="rp rv"><div class="w">인플루언서 G<small>주방제품</small></div><span class="chip">+6%</span><div class="v">1차 3,794,100원 → 2차 <b>4,024,400원</b></div></div>
+    </div>
+    <p class="disc rv">※ 이 밖에 인플루언서 C(육아제품), D(주방제품), H(주방제품)도 2차 공구를 진행했습니다.</p>
+  </div>
+</section>
+
+<!-- 8. 비교 -->
+<section class="compare">
+  <div class="wrap">
+    <span class="lbl rv">DIFFERENCE</span>
+    <h2 class="rv">무엇이 다른지<br><span class="lite">직접 비교해보세요</span></h2>
+    <div class="cmp-list">
+      <div class="cmp-item rv"><div class="k">매칭 기준</div><div class="rows"><div class="o">팔로워 수 위주 섭외</div><div class="n">제품 타겟 · 팔로워층 일치도</div></div></div>
+      <div class="cmp-item rv"><div class="k">공구 조건</div><div class="rows"><div class="o">최저가 위주 가격 경쟁</div><div class="n">구성 · 혜택 · 마진 함께 설계</div></div></div>
+      <div class="cmp-item rv"><div class="k">콘텐츠 방향</div><div class="rows"><div class="o">제품만 전달하고 콘텐츠는 맡김</div><div class="n">판매 포인트 · 콘텐츠 가이드 제공</div></div></div>
+      <div class="cmp-item rv"><div class="k">이후 관리</div><div class="rows"><div class="o">1회 진행 후 종료</div><div class="n">정산 데이터 기반 재공구 기획</div></div></div>
+    </div>
+    <div class="teaser rv"><span class="chev">⌄</span>브랜드가 실제로 하실 일은 딱 하나입니다</div>
+  </div>
+</section>
+
+<!-- 9. 역할 -->
+<section class="promise">
+  <div class="wrap">
+    <span class="lbl rv">ROLE</span>
+    <h2 class="rv">역할을<br><span class="lite">나눕니다</span></h2>
+    <div class="promise-box rv">
+      <div class="row">
+        <div class="side">브랜드<b>제품 · 출고</b></div><div class="arrow">→</div>
+        <div class="side us">콜라보온<b>섭외 · 운영 · 소통</b></div><div class="arrow">→</div>
+        <div class="side">인플루언서<b>콘텐츠 · 판매</b></div>
+      </div>
+      <div class="foot">인플루언서 섭외부터 일정 조율, 소통까지 <b>브랜드가 새로 하실 일은 최소화</b>합니다. 브랜드는 공구 조건 확인과 제품 출고에만 집중하시면 됩니다.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. 서비스 -->
+<section class="svc">
+  <div class="wrap">
+    <span class="lbl rv">SERVICE</span>
+    <h2 class="rv">공동구매에 필요한 일,<br><span class="lite">한 번에 맡습니다</span></h2>
+    <div class="svc-grid">
+      <div class="rv"><i>01</i><b>인플루언서 매칭·섭외</b><span>타겟이 맞는 육아·리빙 채널 선별</span></div>
+      <div class="rv"><i>02</i><b>제안서 제작</b><span>제품 강점·공구 조건을 담은 제안서</span></div>
+      <div class="rv"><i>03</i><b>공구가·구성 설계</b><span>마진을 지키는 가격과 구성 제안</span></div>
+      <div class="rv"><i>04</i><b>콘텐츠 가이드</b><span>판매 포인트·후기 방향 정리</span></div>
+      <div class="rv"><i>05</i><b>일정·소통 관리</b><span>브랜드↔인플루언서 커뮤니케이션</span></div>
+      <div class="rv"><i>06</i><b>리포트·재공구</b><span>성과 공유와 2차 공구 기획</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. 진행 방식 -->
+<section class="flow">
+  <div class="wrap">
+    <span class="lbl rv">HOW IT WORKS</span>
+    <h2 class="rv">공동구매 입점,<br><span class="lite">이렇게 진행됩니다</span></h2>
+    <div class="steps">
+      <div class="s rv"><div class="dot">1</div><div><h3>제품 문의</h3><p>제품 소개서·상세페이지와 희망 조건을 보내주세요.</p></div></div>
+      <div class="s rv"><div class="dot">2</div><div><h3>제품 검토 (1~2일)</h3><p>타겟·가격대·공구 적합도를 검토합니다.</p></div></div>
+      <div class="s rv"><div class="dot">3</div><div><h3>매칭 제안</h3><p>맞는 인플루언서와 공구가·구성·일정을 제안드립니다.</p></div></div>
+      <div class="s rv"><div class="dot">4</div><div><h3>진행 · 결과 공유</h3><p>공구 운영 후 판매 결과를 함께 확인합니다.</p></div></div>
+    </div>
+    <div class="note rv"><b>브랜드 최종 확인 후 진행합니다.</b><br>공구 조건과 인플루언서 제안 내용은 진행 전 브랜드가 직접 확인하고 결정합니다.</div>
+  </div>
+</section>
+
+<!-- 12. FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <span class="lbl rv">FAQ</span>
+    <h2 class="rv" style="margin-bottom:22px">자주 묻는 질문</h2>
+    <div class="i rv"><button>어떤 제품이 공동구매에 맞나요?<span class="pm"></span></button>
+      <div class="a"><p>육아용품, 유아가전, 이유식·식기, 생활·리빙 제품 등 엄마 인플루언서 채널과 타겟이 맞는 제품이 특히 반응이 좋습니다. 제품을 보내주시면 적합도부터 검토해 드립니다.</p></div></div>
+    <div class="i rv"><button>비용은 어떻게 책정되나요?<span class="pm"></span></button>
+      <div class="a"><p>판매가 발생한 만큼 정산하는 판매 수수료 방식이 기본입니다. 제품 단가와 카테고리에 따라 조건이 달라지므로, 검토 후 구체적으로 안내드립니다.</p></div></div>
+    <div class="i rv"><button>인플루언서 섭외도 직접 해주시나요?<span class="pm"></span></button>
+      <div class="a"><p>네. 제품에 맞는 인플루언서 선별부터 제안서 전달, 일정 조율까지 콜라보온이 진행합니다.</p></div></div>
+    <div class="i rv"><button>인플루언서와 소통은 누가 하나요?<span class="pm"></span></button>
+      <div class="a"><p>콜라보온이 창구가 되어 일정·공구 조건·콘텐츠 방향을 인플루언서와 조율합니다. 브랜드는 필요한 내용만 확인해 주시면 됩니다.</p></div></div>
+    <div class="i rv"><button>공구가 잘 되면 2차도 가능한가요?<span class="pm"></span></button>
+      <div class="a"><p>네. 정산 데이터를 바탕으로 같은 인플루언서와의 2차 공구, 혹은 새로운 인플루언서 매칭을 함께 기획합니다.</p></div></div>
+  </div>
+</section>
+
+<!-- 13. 문의 -->
+<section class="apply" id="apply">
+  <div class="wrap">
+    <span class="lbl rv">CONTACT</span>
+    <h2 class="rv">우리 제품은<br><span class="lite">어떤 인플루언서와 만나야 할까요?</span></h2>
+    <p class="lead rv">제품 소개서나 상세페이지를 보내주시면, 맞는 인플루언서와 공구 조건을 정리해 제안드립니다.</p>
+    <div class="ct-card rv">
+      <div class="ct-row"><span>대표</span><b>이서현</b></div>
+      <div class="ct-row"><span>연락처</span><b>010-3513-4026</b></div>
+      <div class="ct-row"><span>인스타그램</span><b>@collab_on_market</b></div>
+      <div class="ct-row"><span>이메일</span><b>collab.on25@gmail.com</b></div>
+      <a class="btn btn-coral" href="http://pf.kakao.com/_YIGNX/chat" target="_blank" rel="noopener">공동구매 문의하기</a>
+    </div>
+    <div class="trust"><span>판매 기반 정산</span><span>섭외·운영·소통 대행</span><span>브랜드 최종 확인</span><span>재공구 기획</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>콜라보온 COLLAB.ON</b><br>
+    Collaboration Commerce Vendor · 육아 · 리빙 공동구매 전문 벤더<br>
+    콜라보온은 제니스픽이 운영하는 공동구매 중개 브랜드입니다.<br><br>
+    상호: 제니스픽 | 대표자: 이서현<br>
+    사업자등록번호: 491-17-02371<br>
+    통신판매업 신고번호: 제2025-서울영등포-1318호<br>
+    사업장 주소: 서울특별시 영등포구 국회대로54길 41-14 (영등포동2가, 인정타운)<br><br>
+    문의 010-3513-4026 · collab.on25@gmail.com<br>Instagram @collab_on_market<br><br>
+    Copyright © 2026 COLLAB.ON. All Rights Reserved.
+  </div>
+</footer>
+
+<div class="sticky">
+  <div class="in"><a class="btn btn-coral" href="#apply">공동구매 입점 문의하기
+    <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+</div>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  document.querySelectorAll('.faq button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement, panel = item.querySelector('.a'), open = item.classList.contains('on');
+      document.querySelectorAll('.faq .i.on').forEach(function(o){ o.classList.remove('on'); o.querySelector('.a').style.maxHeight = null; });
+      if(!open){ item.classList.add('on'); panel.style.maxHeight = panel.scrollHeight + 'px'; }
+    });
+  });
+})();
+</script>
+</body>
+</html>
